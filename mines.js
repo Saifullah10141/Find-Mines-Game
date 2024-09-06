@@ -22,12 +22,13 @@ function display(){
         scoree += 1;
         if (score < checkBox){
             document.querySelector(`.mines-box${i}`).style.backgroundColor= "green"
+            document.querySelector(`.mines-box${i}`).disabled = true
             if (scoree === 29){
                 setTimeout(() =>{alert("Congratulations! You won the Game, Start Again!")
                     score = 0;
-                    scoree -= 29;
+                    scoree = 0;
                     createMines();
-                    display();},100)
+                    display();},20)
             }
         }
         else {
@@ -36,7 +37,7 @@ function display(){
                 score = 0;
                 scoree = 0;
                 createMines();
-                display();},100)
+                display();},20)
             }
         })
     }
