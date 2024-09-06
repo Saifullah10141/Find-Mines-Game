@@ -26,6 +26,7 @@
 .mines-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .check-box{
     position: relative;
@@ -46,4 +47,5 @@
     width: 163px;
     margin: 8px;
     border: none;
+    cursor: pointer;
 }
