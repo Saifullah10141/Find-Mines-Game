@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 1192px){
+    .header, .container{
+        width: 100%;
+    }
+}
+.header{
+    height: 80px;
+    width: 100% auto;
+    min-width: 1192px;
+    background-color: rgb(68, 143, 175);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    margin: 5px;
+    width: 100% auto;
+    min-width: 1192px;
+    height: 670px;
+}
+.mines-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.check-box{
+    position: relative;
+    top: -60px;
+    left: 35px;
+}
+.x-money{
+    font-weight: 600px;
+    position: relative;
+    top: 290px;
+    text-align: center;
+    display: flex;
+    margin-right: 5px;
+}
+.mines-box{
+    background-color: rgba(86, 9, 169, 0.2);
+    height: 168px;
+    width: 168px;
+    margin: 8px;
+    border: none;
+}
